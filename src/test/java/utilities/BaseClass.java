@@ -30,7 +30,7 @@ public class BaseClass extends ListenerImplementation{
 
 //declare WebDriver
 
-	//public static WebDriver driver;
+	public static WebDriver driver;
 	
     
    @BeforeMethod(alwaysRun = true)
@@ -80,11 +80,12 @@ public static void selectVisitTimeOption()
 }
 	
 	
-	@AfterTest(alwaysRun = true)
-	public void closeBrowser() throws InterruptedException {
-		Thread.sleep(2000);
-		driver.quit();
-
+@AfterTest(alwaysRun = true)
+public void closeBrowser() throws InterruptedException {
+    Thread.sleep(2000);
+    if (driver != null) {
+        driver.quit();
+    }
 	}
 
 	

@@ -17,7 +17,7 @@ import org.testng.Reporter;
 import constantData.ConstantData;
 
 public class ListenerImplementation  implements ITestListener{
-	public static WebDriver driver;
+
 	@Override
 	public void onTestStart(ITestResult result) {
 		
@@ -26,38 +26,42 @@ public class ListenerImplementation  implements ITestListener{
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		
+		WebDriver driver = BaseClass.driver;
 		ITestListener.super.onTestSuccess(result);
-		Reporter.log("My Test Case got passed");
-		TakesScreenshot ts = (TakesScreenshot) driver;
+	//	Reporter.log("My Test Case got passed");
+		if(driver !=null) {
+	try {	TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-
-	
-
-		File destination = new File(ConstantData.ScreenshotPathPass);
-		try {
-			FileHandler.copy(source, destination);
+File destination = new File(ConstantData.ScreenshotPathPass);
+		FileHandler.copy(source, destination);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}else {
+        Reporter.log("Driver is null. Cannot capture screenshot on success.");
+    }
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
 		ITestListener.super.onTestFailure(result);
-		Reporter.log("My Test Case got failed");
-		TakesScreenshot ts = (TakesScreenshot) driver;
+		WebDriver driver = BaseClass.driver;
+	//	Reporter.log("My Test Case got failed");
+		if(driver !=null) {
+		try{TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
         File destination = new File(ConstantData.ScreenshotPathFail);
-		try {
+		
 			FileHandler.copy(source, destination);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		}else {
+            Reporter.log("Driver is null. Cannot capture screenshot on failure.");
+        }
 	}
 
 	@Override
