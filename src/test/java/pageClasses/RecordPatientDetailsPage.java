@@ -67,6 +67,7 @@ public static By getBiometericsText()
 
 public static By endVisit(){
 	return By.xpath("//button[text()='End visit']");
+	//return	By.xpath("//div[text()='End active visit']");
 }
 
 public static By confirmEndVisit(){

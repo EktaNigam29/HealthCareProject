@@ -5,15 +5,15 @@
 	<listener class-name="utilities.ListenerImplementation"/>
 	</listeners>
   <test thread-count="5" name="Test">
-	  <groups>
+	<groups>
 		  <run>
 			  <include name="sanity"></include>
 		  </run>
 	  </groups>
     <classes>
       <class name="testClasses.AppointmentPatientTest"/>
-      <class name="testClasses.RecordPatientDetailsTest"/>
       <class name="testClasses.LoginTest"/>
+      <class name="testClasses.RecordPatientDetailsTest"/>
       <class name="testClasses.RegisterPatientTest"/>
       <class name="testClasses.Extent_Report"/>
     </classes>

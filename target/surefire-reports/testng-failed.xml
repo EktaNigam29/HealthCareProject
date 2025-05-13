@@ -14,9 +14,7 @@
       <class name="testClasses.RecordPatientDetailsTest">
         <methods>
           <include name="openBrowser"/>
-          <include name="tearDown"/>
           <include name="addPatVitals"/>
-          <include name="setupExtent"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testClasses.RecordPatientDetailsTest -->

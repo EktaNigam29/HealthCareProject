@@ -5,30 +5,30 @@
       <![CDATA[My Test Case got passed]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-05-13T18:43:12 IST" name="Default suite" finished-at="2025-05-13T18:43:32 IST" duration-ms="20044">
+  <suite started-at="2025-05-13T20:15:23 IST" name="Default suite" finished-at="2025-05-13T20:15:55 IST" duration-ms="32594">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.executeLoginTest()[pri:0, instance:testClasses.LoginTest@2034b64c]" name="executeLoginTest" class="testClasses.LoginTest"/>
+        <method signature="RecordPatientDetailsTest.addPatVitals()[pri:3, instance:testClasses.RecordPatientDetailsTest@6bbe85a8]" name="addPatVitals" class="testClasses.RecordPatientDetailsTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-05-13T18:43:12 IST" name="Default test" finished-at="2025-05-13T18:43:32 IST" duration-ms="20044">
-      <class name="testClasses.LoginTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testClasses.LoginTest@2034b64c]" started-at="2025-05-13T18:43:12 IST" name="openBrowser" finished-at="2025-05-13T18:43:25 IST" duration-ms="13240" status="PASS">
+    <test started-at="2025-05-13T20:15:23 IST" name="Default test" finished-at="2025-05-13T20:15:55 IST" duration-ms="32594">
+      <class name="testClasses.RecordPatientDetailsTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testClasses.RecordPatientDetailsTest@6bbe85a8]" started-at="2025-05-13T20:15:23 IST" name="openBrowser" finished-at="2025-05-13T20:15:36 IST" duration-ms="13764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="executeLoginTest()[pri:0, instance:testClasses.LoginTest@2034b64c]" started-at="2025-05-13T18:43:25 IST" name="executeLoginTest" finished-at="2025-05-13T18:43:30 IST" duration-ms="4234" status="PASS">
+        <test-method signature="addPatVitals()[pri:3, instance:testClasses.RecordPatientDetailsTest@6bbe85a8]" started-at="2025-05-13T20:15:36 IST" name="addPatVitals" finished-at="2025-05-13T20:15:53 IST" duration-ms="16213" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[My Test Case got passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- executeLoginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LoginTest@2034b64c]" started-at="2025-05-13T18:43:30 IST" name="closeBrowser" finished-at="2025-05-13T18:43:32 IST" duration-ms="2354" status="PASS">
+        </test-method> <!-- addPatVitals -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.RecordPatientDetailsTest@6bbe85a8]" started-at="2025-05-13T20:15:53 IST" name="closeBrowser" finished-at="2025-05-13T20:15:55 IST" duration-ms="2363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testClasses.LoginTest -->
+      </class> <!-- testClasses.RecordPatientDetailsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

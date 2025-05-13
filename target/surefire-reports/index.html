@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testClasses.RecordPatientDetailsTest" class="method navigator-link" hash-for-method="addPatVitals">addPatVitals</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testClasses.RecordPatientDetailsTest" class="method navigator-link" hash-for-method="addPatVitals">addPatVitals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testClasses.RegisterPatientTest" class="method navigator-link" hash-for-method="addPatient(Joshua, Thomas, 30, Kolkatta)">addPatient(Joshua, Thomas, 30, Kolkatta)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testClasses.AppointmentPatientTest" class="method navigator-link" hash-for-method="appointmentPatient">appointmentPatient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testClasses.Extent_Report" class="method navigator-link" hash-for-method="demoTest">demoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,49 +138,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testClasses.RecordPatientDetailsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addPatVitals">
-                  </a> <!-- addPatVitals -->
-                  <span class="method-name">addPatVitals</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@name, &apos;Temperature&apos;)] (tried for 40 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 136.0.3240.64, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50874}, msedge: {msedgedriverVersion: 136.0.3240.64 (e3a39d3fa3c6..., userDataDir: C:\Users\EKTA\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50874/devtoo..., se:cdpVersion: 136.0.3240.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 191247ac9f5860009120fec955530317
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at utilities.BaseClass.addExplicitWait(BaseClass.java:89)
-	at testClasses.RecordPatientDetailsTest.addPatVitals(RecordPatientDetailsTest.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testClasses.AppointmentPatientTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="appointmentPatient">
-                  </a> <!-- appointmentPatient -->
-                  <span class="method-name">appointmentPatient</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -196,6 +149,51 @@ Session ID: 191247ac9f5860009120fec955530317
                   <a name="executeLoginTest">
                   </a> <!-- executeLoginTest -->
                   <span class="method-name">executeLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.Extent_Report</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoTest">
+                  </a> <!-- demoTest -->
+                  <span class="method-name">demoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.RecordPatientDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPatVitals">
+                  </a> <!-- addPatVitals -->
+                  <span class="method-name">addPatVitals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.AppointmentPatientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="appointmentPatient">
+                  </a> <!-- appointmentPatient -->
+                  <span class="method-name">appointmentPatient</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,10 +235,10 @@ Session ID: 191247ac9f5860009120fec955530317
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testClasses.AppointmentPatientTest&quot;/&gt;
-      &lt;class name=&quot;testClasses.RecordPatientDetailsTest&quot;/&gt;
       &lt;class name=&quot;testClasses.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testClasses.RecordPatientDetailsTest&quot;/&gt;
       &lt;class name=&quot;testClasses.RegisterPatientTest&quot;/&gt;
-      &lt;class name=&quot;utilities.BaseClass&quot;/&gt;
+      &lt;class name=&quot;testClasses.Extent_Report&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -280,6 +278,10 @@ Session ID: 191247ac9f5860009120fec955530317
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">demoTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">executeLoginTest</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -300,28 +302,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addPatVitals')
 data.setCell(0, 2, 'testClasses.RecordPatientDetailsTest')
-data.setCell(0, 3, 55421);
+data.setCell(0, 3, 17383);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'appointmentPatient')
 data.setCell(1, 2, 'testClasses.AppointmentPatientTest')
-data.setCell(1, 3, 18038);
+data.setCell(1, 3, 13361);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addPatient')
 data.setCell(2, 2, 'testClasses.RegisterPatientTest')
-data.setCell(2, 3, 17532);
+data.setCell(2, 3, 9763);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'executeLoginTest')
 data.setCell(3, 2, 'testClasses.LoginTest')
-data.setCell(3, 3, 4572);
+data.setCell(3, 3, 3504);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'demoTest')
+data.setCell(4, 2, 'testClasses.Extent_Report')
+data.setCell(4, 3, 13);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -333,13 +339,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">appointmentPatient</span>
+              <span class="reporter-method-name">executeLoginTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">My Test Case got passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">executeLoginTest</span>
+              <span class="reporter-method-name">demoTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">All scenarios passed</span>
+                <span class="reporter-method-output">My Test Case got passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addPatVitals</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">My Test Case got passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">appointmentPatient</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">My Test Case got passed</span>
               </div> <!-- reporter-method-output-div -->
@@ -350,59 +369,30 @@ return data;
                 <span class="reporter-method-output">My Test Case got passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">addPatVitals</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">My Test Case got failed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">utilities.BaseClass</span>
+              <span class="ignored-class-name">testClasses.LoginTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">closeBrowser</span>
-                <br/>
-                <span class="ignored-method-name">setupExtent</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testClasses.RecordPatientDetailsTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupExtent</span>
-                <br/>
                 <span class="ignored-method-name">closeBrowser</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testClasses.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupExtent</span>
-                <br/>
-                <span class="ignored-method-name">closeBrowser</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testClasses.RegisterPatientTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupExtent</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
                 <span class="ignored-method-name">closeBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -415,64 +405,75 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testClasses.AppointmentPatientTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testClasses.Extent_Report</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setupExtent</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.AppointmentPatientTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">781 ms</span>
+                <span class="method-start">182 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">appointmentPatient</span>
-                <span class="method-start">11295 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testClasses.RecordPatientDetailsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">29552 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addPatVitals</span>
-                <span class="method-start">40833 ms</span>
+                <span class="method-start">8601 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">96450 ms</span>
+                <span class="method-start">22113 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">executeLoginTest</span>
-                <span class="method-start">104892 ms</span>
+                <span class="method-start">29594 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.RecordPatientDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">33292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addPatVitals</span>
+                <span class="method-start">43001 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.RegisterPatientTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">109669 ms</span>
+                <span class="method-start">60545 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addPatient(Joshua, Thomas, 30, Kolkatta)</span>
-                <span class="method-start">118112 ms</span>
+                <span class="method-start">67628 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Extent_Report</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">demoTest</span>
+                <span class="method-start">77532 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.AppointmentPatientTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">135930 ms</span>
+                <span class="method-start">77729 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Extent_Report</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">138577 ms</span>
+                <span class="method-start">80112 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
