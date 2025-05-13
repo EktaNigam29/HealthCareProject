@@ -7,6 +7,7 @@ import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -15,8 +16,8 @@ import org.testng.Reporter;
 
 import constantData.ConstantData;
 
-public class ListenerImplementation extends BaseClass implements ITestListener{
-
+public class ListenerImplementation  implements ITestListener{
+	public static WebDriver driver;
 	@Override
 	public void onTestStart(ITestResult result) {
 		

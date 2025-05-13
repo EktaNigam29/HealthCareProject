@@ -26,11 +26,11 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import pageClasses.AppointmentPatientPage;
 
-public class BaseClass {
+public class BaseClass extends ListenerImplementation{
 
 //declare WebDriver
 
-	public static WebDriver driver;
+	//public static WebDriver driver;
 	
     
    @BeforeMethod(alwaysRun = true)
