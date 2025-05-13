@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-05-13T18:43:12 IST" name="Default suite" finished-at="2025-05-13T18:43:32 IST" duration-ms="20044">
+    <groups>
+      <group name="sanity">
+        <method signature="LoginTest.executeLoginTest()[pri:0, instance:testClasses.LoginTest@2034b64c]" name="executeLoginTest" class="testClasses.LoginTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-05-13T18:43:12 IST" name="Default test" finished-at="2025-05-13T18:43:32 IST" duration-ms="20044">
+      <class name="testClasses.LoginTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testClasses.LoginTest@2034b64c]" started-at="2025-05-13T18:43:12 IST" name="openBrowser" finished-at="2025-05-13T18:43:25 IST" duration-ms="13240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="executeLoginTest()[pri:0, instance:testClasses.LoginTest@2034b64c]" started-at="2025-05-13T18:43:25 IST" name="executeLoginTest" finished-at="2025-05-13T18:43:30 IST" duration-ms="4234" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeLoginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LoginTest@2034b64c]" started-at="2025-05-13T18:43:30 IST" name="closeBrowser" finished-at="2025-05-13T18:43:32 IST" duration-ms="2354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
